@@ -29,4 +29,12 @@ void main (){
   prword() ;
       
   prwordt()("Afryam") ;
+
+  var word = prword() ;
+    word("Af") ;
+
+    var word_2 = prword ;
+    word_2()("afr") ;
+  
+  
 }
