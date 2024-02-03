@@ -27,6 +27,9 @@ print (Names.first);
    var namesm = Names.where((name){return name.startsWith("A"); }).toList() ;
 
     print (namesm) ;
+      var l1 = [1,2,3] ;
+      var l2 = [0, ...l1 , ...[3,3]] ;
+      print (l2) ; 
 
     var Nums = [2 ,8,4,9,3,7] ;
     Nums.sort();
