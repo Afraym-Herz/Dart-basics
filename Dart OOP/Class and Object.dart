@@ -11,16 +11,7 @@ h.height = 182 ;
     print ("-----------------------") ;
     h.info() ;
 
-Human h = new Human() ;
-h.name = 'Afraym' ;
-h.age = 19 ;
-h.height = 182 ;
 
-    print (h.name) ;
-    print (h.age) ;
-    print (h.height) ;
-    print ("-----------------------") ;
-    h.info() ;
 }   
 
     
