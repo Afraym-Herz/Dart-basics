@@ -11,11 +11,11 @@ Human h2 = new Human("Ali", 20, 175) ;
     
 class Human {
   var name , age , height , title ;
-  Human(String name , int age , int height , [String title = "unkonwn"]){
-    this.name = name ;
-    this.age = age ;
-    this. height = height ;
-    this.title = title ;
+  Human(String p_name , int p_age , int p_height , [String p_title = "unkonwn"]){
+    name = p_name ;
+    age = p_age ;
+    height = p_height ;
+    title = p_title ;
   }
   void info (){
     print ("the Name is : $name") ;
