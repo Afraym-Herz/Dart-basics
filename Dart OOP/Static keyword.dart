@@ -12,13 +12,13 @@ void main() {
     
 class Human {
   static var name , age , height , title ;
- static void values (String p_name , int p_age , int p_height , {String p_title = "unkonwn"}){
+ static void values (String p_name , int p_age , int p_height , {String p_title = "unkonwn"}){ // for class not object
     name = p_name ;
     age = p_age ;
     height = p_height ;
     title = p_title ;
   }
- static void info (){
+ static void info (){ // can be call by class's name 
     print ("the Name is : $name") ;
     print ("the age is : $age") ;
     print ("the height is : $height") ;
