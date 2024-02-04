@@ -10,16 +10,18 @@ Human h2 = new Human("Ali", 20, 175) ;
 
     
 class Human {
-  var name , age , height ;
-  Human(String name , int age , int height){ // must matching the class's name 
+  var name , age , height , title ;
+  Human(String name , int age , int height , [String title = "unkonwn"]){
     this.name = name ;
     this.age = age ;
     this. height = height ;
+    this.title = title ;
   }
   void info (){
     print ("the Name is : $name") ;
     print ("the age is : $age") ;
     print ("the height is : $height") ;
+    print ("the title is $title") ;
   }
 
 }
