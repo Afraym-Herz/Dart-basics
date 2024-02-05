@@ -1,0 +1,37 @@
+  class Human {
+  var _name, _age, _height, _title;
+
+  Human(String name, int age, int height, {String title = "unknown"}) {
+    this._name = name;
+    this._age = age;
+    this._height = height;
+    this._title = title;
+  }
+
+  
+  
+
+  // Setters
+  set name(String name) {
+    this._name = name;
+  }
+
+ set age(int age) {
+   this. _age = age;
+  }
+
+ set height(int height) {
+   this. _height = height;}
+
+ set title(String title) {
+    this._title = title;
+  }
+    // Getters
+ String get name => this._name;
+  
+ int get age => this._age;
+  
+ int get height => this._height
+ String get title => this._title;
+ 
+}
