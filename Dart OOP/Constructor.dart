@@ -11,7 +11,7 @@ Human h2 = new Human("Ali", 20, 175) ;
     
 class Human {
   var name , age , height , title ;
-  Human(String p_name , int p_age , int p_height , [String p_title = "unkonwn"]){
+  Human(String p_name , int p_age , int p_height , [String p_title = "unkonwn"]){ /// must matching the class's name
     name = p_name ;
     age = p_age ;
     height = p_height ;
