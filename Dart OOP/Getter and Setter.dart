@@ -1,7 +1,7 @@
-  library other;
+/// import Human ;
 void main() {
 Human h = new Human('Afraym',19,182 , title: "Flutter developer") ;
-
+//h.name = "amir"  error because name is private attripute
 Human h2 = new Human("Ali", 20, 175) ;
     
     print ("the name is ${h.getName()}") ;
@@ -18,7 +18,8 @@ Human h2 = new Human("Ali", 20, 175) ;
     
 
 }   
-
+/// another file 
+// Human.file
    class Human {
   var _name, _age, _height, _title;
 
