@@ -1,4 +1,3 @@
-/// import Human ;
 void main() {
 
     Lion scar = Lion (bloodType: 'o+' , skinColor: "Brown" , weight: 110 ) ;
