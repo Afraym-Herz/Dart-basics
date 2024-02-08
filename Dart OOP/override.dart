@@ -1,4 +1,3 @@
-/// import Human ;
 void main() {
 
     Lion scar = Lion (bloodType: 'o+' , skinColor: "Brown" , weight: 110 ) ;
@@ -36,6 +35,7 @@ print ("----------------------------------") ;
       Lion ( { required this.bloodType , required String skinColor , required double weight}) : super(
         skinColor: skinColor,   weight: weight
         ) ; 
+        
         @override  /// we use the same function's name in parent class to override the function to fit the child class
         void eat(){
           print ("Lion is eating") ;
@@ -49,10 +49,12 @@ print ("----------------------------------") ;
 
    class Dog extends Animal {
     Dog ({ required super. skinColor , required super. weight}) ;
+       
       @override
       void eat(){
           print ("Dog is eating") ;
         }
+       
     void bark(){
       print ("barking") ;
     }
