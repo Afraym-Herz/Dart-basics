@@ -1,4 +1,3 @@
-/// import Human ;
 void main() {
 
     Lion scar = Lion ("Brown" , 110 ) ;
@@ -20,9 +19,9 @@ print ("----------------------------------") ;
     int _numOfLegs = 4 ;
     String? _skinColor ;
     double? _weight ;
+       
     Animal(this._skinColor, this._weight) ;
-   // Animal ({required this.skinColor,this.weight});/// if I add required keyword in parent's constructor , I must add it to child's constructor
-     
+       
     void eat (){
       print ("eating") ;
       }
