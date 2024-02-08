@@ -1,6 +1,6 @@
 void main() {
 String gender1 = 'male' ;
-Gender gender = Gender.male ;
+Gender gender = Gender.male ; 
 
 switch(gender){ /// if value of gender is deleted we get error 
   
@@ -12,7 +12,7 @@ switch(gender){ /// if value of gender is deleted we get error
 
 
 }   
-
+/// we use enum to set all possible values which we can use
 enum Gender {
   male,female 
 }
