@@ -8,8 +8,37 @@ class Person3 {
   final String name;
   const Person3(this.name);
 }
-void main(){
- Person1 p1 = Person1(); 
+
+void main() {
+
+
+  int a = 2;
+  int b = 2;
+  print(a == b);
+  print(a.hashCode);
+  print(b.hashCode);
+  b = 3;
+  print(b.hashCode);
+
+
+   print('---------------------');
+  String name1 = "Afraym";
+  String name2 = "Afraym";
+   
+  print(name1 == name2);
+  print(name1.hashCode);
+  print(name2.hashCode); /// In Dart, strings with the same contents will have the same hash code. 
+    print('---------------------');
+    name2+='n' ; /// name2 take another hashCode  
+  
+  print(name1.hashCode);
+  print(name2.hashCode);
+
+    
+  print('---------------------');
+
+
+     Person1 p1 = Person1(); 
      Person1 p2 = Person1();
 
    print(p1 == p2); /// false because these are diffrent objects 
@@ -28,7 +57,13 @@ void main(){
     print(Person1().hashCode);
 
 
- const p3 = Person2();
+      
+       print("------------------------");
+
+      /// when we use const with objects, it creates compile-time constants, meaning that the objects are created at compile time rather than at runtime.
+
+
+     const p3 = Person2();
      const p4 = Person2();
 
 
