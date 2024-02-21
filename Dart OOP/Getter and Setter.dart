@@ -34,8 +34,11 @@ Human h2 = new Human("Ali", 20, 175) ;
   
 
   // Setters
-  void setName(String name) {
-    _name = name;
+   void setName(String name) { /// Setter method to update private property _name
+    if (name.isEmpty) {
+      throw Exception("name cannot be empty");
+    }
+    this._name = name;
   }
 
  void setAge(int age) {
@@ -50,13 +53,13 @@ Human h2 = new Human("Ali", 20, 175) ;
     _title = title;
   }
     // Getters
-  String getName ()=> _name;
+  String getName ()=> _name!;
   
-  int getAge ()=> _age;
+  int getAge ()=> _age!;
   
-  int getHeight() => _height;
+  int getHeight() => _height!;
   
-  String getTitle ()=> _title;
+  String getTitle ()=> _title!;
 }
 
 
