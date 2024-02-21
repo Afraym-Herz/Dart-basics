@@ -20,6 +20,24 @@ final int num = 10 ;
   final name1 = name ;
   final num4 = sum() ;
   //const num5 = sum() ; //!error const just set a const value not function
+
+
+print("------------------------");
+       final List l3 = [1, 2, 3];
+       final List l4 = [1, 2, 3];
+       
+       l3.add(4);
+       print(l3 == l4); // false
+       /// 'final' list variable affects its content but does not affect its reference
+       
+       const List l5 = [1, 2, 3];
+       const List l6 = [1, 2, 3];
+       // l6.add(5); //!error
+       print(l5 == l6); // true 
+       /// const list variable is not allowed as it is immutable. Comparing lists using == compares their contents, not their references.
+
+
+ 
 }
 int sum (){
   return 5 ;
