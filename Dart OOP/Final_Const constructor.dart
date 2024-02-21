@@ -80,4 +80,20 @@ void main() {
        /// both are compile-time constants created from the same expression 
 
        print(const Person2() == const Person2()); // true
+
+
+
+
+   print("-------------------------");
+  var p5 = const Person3("Afraym");
+  var p6 = const Person3("Afraym");
+  print(p5 == p6); /// true, because they both refer to the same constant instance of Person3 with the name "Afraym".
+
+
+  print(const [] == const []); /// true, because they both refer to the same constant instance of Person3 with the name "Afraym".
+
+  const p7 =  Person3("Afraym");
+  const p8 =  Person3("Herz");
+
+  print(p7 == p8);  /// false, because they are different constant instances with different names.
 }
